@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/layout/Navbar'
+import { Switch, Route } from 'react-router-dom'
+import Home from './components/pages/user/Home';
+import Skills from './components/pages/user/Skills';
+import Experience from './components/pages/user/Experience';
 
 class  App extends Component {
 
@@ -14,9 +18,12 @@ class  App extends Component {
     <div className="App">
       <Navbar />
       <header className="App-header">
-        <h1>Welcome</h1>
-        <h2>Ramon Medina</h2>
-        <h3>Software Engineer</h3>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/home' component={Home} />
+          <Route path='/skills' component={Skills} />
+          <Route path='/experience' component={Experience} />
+        </Switch>
       </header>
     </div>
   )}
