@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-class Skills extends Component {
+class AdminLogin extends Component {
   
     render() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1>A few of my skills</h1>
+                    <h1>Admin Login</h1>
 
                 </header>
             </div>
@@ -14,4 +14,4 @@ class Skills extends Component {
   
   }
   
-  export default Skills;
+  export default AdminLogin;
