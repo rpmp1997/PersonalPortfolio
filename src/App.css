@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.skills-collapse-text {
+  text-align: left;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -16,11 +20,9 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -28,9 +30,21 @@
   color: #61dafb;
 }
 
-.cardSizeArea {
-  height: 100;
-  width: 100;
+.container-list-element {
+  border: 2px solid white;
+}
+
+.body {
+  margin: 30px;
+}
+
+.col-list-element{
+  border: 1px solid white;
+}
+
+.row-list-element{
+  border: 1px solid white;
+  height: 150px;
 }
 
 @keyframes App-logo-spin {

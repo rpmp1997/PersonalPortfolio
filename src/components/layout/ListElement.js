@@ -1,30 +1,23 @@
 import React from 'react'
-import styles from './../../App.css';
+import './../../App.css';
 
 
 const  ListElement = (props) => {
     
     return (
-        <div class="container">
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-body bg-dark" style={styles.cardSizeArea}>
-                        <p class="card-text">{props.picture}</p>
+            <div class="container container-list-element">
+                <div class="row row-list-element" >
+                    <div class="col-md-3 col-list-element bg-dark text-white">
+                        <p>{props.picture}</p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body bg-dark " style={styles.cardSizeArea}>
-                        <p class="card-text">{props.description}</p>
+                    <div class="col-md-6 col-list-element bg-dark text-white">
+                        <p>{props.description}</p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body bg-dark" style={styles.cardSizeArea}>
-                        <p class="card-text">{props.details}</p>
+                    <div class="col-md-3 col-list-element bg-dark text-white">
+                        <p>{props.details}</p>
                     </div>
                 </div>
             </div>
-        </div>
-
     )
 }
 
