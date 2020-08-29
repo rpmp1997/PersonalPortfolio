@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import BiographyLayout from '../../layout/BiographyLayout'
+import './../../../App.css'
 
 class Home extends Component {
 
     state = {
-            
+        parragraph: "A long parragraph about me"
     }
   
     render() {
@@ -14,6 +16,7 @@ class Home extends Component {
                 <h1>Welcome</h1>
                 <h2>Ramon Medina</h2>
                 <h3>Software Engineer</h3>
+                <BiographyLayout  biography={this.state.parragraph}/>
                 </header>
             </div>
     )}

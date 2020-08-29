@@ -7,7 +7,7 @@ const CollapsableSkills = (props) => {
         <div class="container">
             <div class="row">
                 <div class="col-md-12 bg-dark" >
-                    <Collapsible trigger={props.collapaseTitle}>
+                    <Collapsible trigger={props.collapseTitle}>
                         <p>{props.collapseItem}</p>
                     </Collapsible>
                 </div>
